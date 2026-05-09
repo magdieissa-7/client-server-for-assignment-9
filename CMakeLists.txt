@@ -8,3 +8,6 @@ find_package(Boost REQUIRED)
 add_executable(myserver server.cpp)
 target_include_directories(myserver PRIVATE ${Boost_INCLUDE_DIRS})
 
+
+add_executable(myclient client.cpp)
+target_include_directories(myclient PRIVATE ${Boost_INCLUDE_DIRS})
